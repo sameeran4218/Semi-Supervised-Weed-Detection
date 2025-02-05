@@ -35,14 +35,6 @@ The model was trained iteratively. Initially, it was trained on the augmented la
 
 The model achieved significant improvements in performance after the incorporation of high-confidence pseudo-labeled data. With the iterative training process, the model became more robust, with a notable increase in accuracy and generalization capability for detecting weeds in various scenarios.
 
-## Challenges and Solutions
-
-### 1. **Noise in Pseudo-Labels**
-One of the main challenges faced was the potential introduction of noise into the dataset, as some pseudo-labels predicted by the model may have been incorrect. To address this, we set a confidence threshold of 0.95, ensuring that only pseudo-labels with high confidence were added to the training set.
-
-### 2. **Balancing Labeled and Unlabeled Data**
-Another challenge was maintaining a balance between labeled and pseudo-labeled data to avoid overfitting to the pseudo-labeled examples. This was mitigated by gradually increasing the proportion of pseudo-labeled data after each training iteration.
-
 ## Getting Started
 
 ### Prerequisites
